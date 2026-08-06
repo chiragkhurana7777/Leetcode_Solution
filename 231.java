@@ -1,0 +1,35 @@
+class Solution {
+    public boolean isPowerOfTwo(int n) {
+        
+        if(n>0 && ((n & (n-1)) ==0)){
+            return true;
+        }
+        else return false;
+
+    }
+}
+
+class Solution1 {
+    public boolean isPowerOfTwo(int n) {
+        int base=2;
+        
+        if(n<=0) return false;
+        
+        while(n%base==0){
+            n/=base;
+        }
+        if(n==1) return true;
+
+        return false;
+    }
+}
+
+ class Solution2 {
+    public boolean isPowerOfTwo(int n) {
+        
+        return n>0 && ((n & (n-1)) ==0);
+            
+        
+
+    }
+}

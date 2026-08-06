@@ -1,0 +1,23 @@
+class Solution {
+    public boolean canConstruct(String ransomNote, String magazine) {
+        // if(magazine.indexOf(ransomNote)!=-1) return true;
+        // else return false;
+
+        int[] arr= new int[26];
+
+        for(int i=0;i<magazine.length();i++){
+            arr[magazine.charAt(i)-97]++;
+        }
+
+        for(int i=0;i<ransomNote.length();i++){
+            if(arr[ransomNote.charAt(i)-97]>0){
+                arr[ransomNote.charAt(i)-97]--;
+            }
+            else return false;
+        }
+
+        return true;
+
+
+    }
+}
