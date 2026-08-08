@@ -1,3 +1,4 @@
+import java.util.HashSet;
 class Solution {
     public boolean containsNearbyDuplicate(int[] nums, int k) {
         int n = nums.length;
