@@ -16,7 +16,6 @@ class Solution {
     }
     public String longestPalindrome(String s) {
 
-        
         String ans="";
         for(int i=0;i<s.length();i++){
             
