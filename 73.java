@@ -1,3 +1,5 @@
+//optimal in time but not in space
+
 class Solution {
     public void setZeroes(int[][] matrix) {
         int m=matrix.length;
@@ -24,3 +26,5 @@ class Solution {
 
     }
 }
+
+//optimal: This is one of those DSA problems where the important part isn't the code — it's realizing that the input matrix itself can be used as your extra storage.
