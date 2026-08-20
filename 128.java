@@ -16,10 +16,9 @@ class Solution {
             if(!set.contains(num-1)){
                 int current=1;
                 int x=num;
-                int i=1;
-                while(set.contains(x+i)){
+                while(set.contains(x+1)){
                     current++;
-                    i++;
+                    x++;
                 }
 
                 longest=Math.max(longest,current);
