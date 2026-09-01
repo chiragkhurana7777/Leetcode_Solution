@@ -29,6 +29,6 @@ class Solution {
             if(l1!=null) l1=l1.next;
             if(l2!=null) l2=l2.next;
         }
-        return head.next; //head.next not only head because head has a dummy node 0 which we made just to initialize the new list and it's not the part of our answer
+        return head.next; //head.next not only head because head has a dummy node 0 which we made just to initialize the new list and it's not the part of our answer even if we not wrote 0 to initilize the java will itself set val value to 0 so we need head.next
     }
 }
